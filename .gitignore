@@ -1,0 +1,10 @@
+# build and dependencies
+node_modules/
+dist/
+
+# markdown files for planning and thinking
+.planning/
+
+
+# hygen - ignoring for now unitl I'm happy with the template setup
+_templates/

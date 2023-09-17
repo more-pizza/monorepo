@@ -1,0 +1,21 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "packageManager": "npm",
+  "engines": {
+    "node": "20.x",
+    "npm": "9.x"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "turbo": "^1.10.3"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "change": "npx changeset"
+  }
+}
