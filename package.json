@@ -16,6 +16,7 @@
   "scripts": {
     "build": "turbo build",
     "lint": "turbo lint",
-    "change": "npx changeset"
+    "change": "npx changeset",
+    "release": "npm run build && npx changeset publish"
   }
 }
