@@ -1,0 +1,29 @@
+{
+  "name": "@more-pizza/quick-server",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist/ && tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsc -w",
+    "format": "npx format-package -w"
+  },
+  "peerDependencies": {
+    "express": "^4.0.0",
+    "mongoose": "^7.0.0",
+    "graphql-tag": "^2.0.0",
+    "@apollo/server": "^4.0.0"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "pino": "^8.16.1",
+    "pino-pretty": "^10.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.4",
+    "source-map-support": "0.5.21",
+    "type-fest": "4.2.0",
+    "tsup": "^7.2.0"
+  }
+}

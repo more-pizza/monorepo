@@ -6,8 +6,10 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
-    "lint": "tsc"
+    "build": "rm -rf dist/ && tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "dev": "tsc -w",
+    "format": "npx format-package -w"
   },
   "dependencies": {
     "pdf-parse": "1.1.1"
