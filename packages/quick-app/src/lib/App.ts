@@ -7,16 +7,16 @@ import { createExpressApp } from '../utils/express';
 const DEFAULT_PORT = '8080';
 const DEFAULT_MONGO_URI = 'mongodb://localhost:27017';
 
-export interface IArgs {
+export interface QuickAppArgs {
   router: express.Router;
 }
 
-export interface IOptions {
+export interface QuickAppOptions {
   port?: string;
   mongoUri?: string;
 }
 
-export class App {
+export class QuickApp {
   public logger: PinoBaseLogger;
   public httpServer: http.Server;
   public expressApp: ExpressApplication;
@@ -27,7 +27,7 @@ export class App {
     mongoUri?: string;
   };
 
-  constructor(args: IArgs, options?: IOptions) {
+  constructor(args: QuickAppArgs, options?: QuickAppOptions) {
     this.expressRouter = args.router;
 
     this.options = {

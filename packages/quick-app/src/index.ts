@@ -1,5 +1,5 @@
-export type { IArgs, IOptions } from './lib/App';
-export { App } from './lib/App';
+export { QuickApp } from './lib/App';
+export type { QuickAppArgs, QuickAppOptions } from './lib/App';
 
 // utils
 export * as expressUtils from './utils/express';

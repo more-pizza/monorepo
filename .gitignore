@@ -10,3 +10,6 @@ _templates/
 
 # turbo files
 .turbo/
+
+# local testing directories
+.mongo/
