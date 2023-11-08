@@ -3,6 +3,7 @@
   "pipeline": {
     "build": { "outputs": [], "dependsOn": ["^build"] },
     "dev": {},
+    "lint": {},
     "format": {},
     "change": {},
     "check": {},

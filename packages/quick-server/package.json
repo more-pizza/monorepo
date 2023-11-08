@@ -5,7 +5,8 @@
   "scripts": {
     "build": "rm -rf dist/ && tsup src/index.ts --format cjs,esm --dts",
     "dev": "tsc -w",
-    "format": "npx format-package -w"
+    "format": "npx format-package -w",
+    "lint": "tsc"
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",
