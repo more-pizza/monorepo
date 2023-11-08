@@ -4,13 +4,12 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rm -rf dist/ && tsup src/index.ts --format cjs,esm --dts",
-    "lint": "tsc",
     "dev": "tsc -w",
     "format": "npx format-package -w"
   },
+  "types": "dist/index.d.ts",
   "dependencies": {
     "pdf-parse": "1.1.1"
   },
