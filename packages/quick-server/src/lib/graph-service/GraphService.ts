@@ -8,7 +8,6 @@ import { expressMiddleware } from '@apollo/server/express4';
 
 import { GraphDomain } from './GraphDomain';
 import { BaseService, BaseServiceStartParams } from '../../BaseService';
-import { log } from 'console';
 
 export class GraphService implements BaseService {
   public domains: GraphDomain[];
