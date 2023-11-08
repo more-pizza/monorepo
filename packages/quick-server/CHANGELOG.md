@@ -1,5 +1,11 @@
 # @more-pizza/quick-server
 
+## 0.2.1
+
+### Patch Changes
+
+- abab677: test release'
+
 ## 0.2.0
 
 ### Minor Changes
