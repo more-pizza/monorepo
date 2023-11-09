@@ -1,5 +1,11 @@
 # @more-pizza/quick-server
 
+## 0.2.2
+
+### Patch Changes
+
+- 4b54ca5: attempt to fix
+
 ## 0.2.1
 
 ### Patch Changes
