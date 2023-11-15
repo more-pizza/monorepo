@@ -1,5 +1,11 @@
 # @more-pizza/quick-server
 
+## 0.3.0
+
+### Minor Changes
+
+- 24b7000: ability to pass name to quick server and have surfaced on healthz
+
 ## 0.2.2
 
 ### Patch Changes
