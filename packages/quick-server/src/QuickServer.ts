@@ -11,6 +11,7 @@ const DEFAULT_PORT = '8080';
 const DEFAULT_MONGO_URI = 'mongodb://localhost:27017';
 
 export interface QuickServerOptions {
+  name?: string;
   services?: BaseService[];
   options?: {
     port?: string;
@@ -24,6 +25,7 @@ export class QuickServer {
   public services?: BaseService[];
 
   public options: {
+    name?: string;
     port?: string;
     mongoUri?: string;
   };
@@ -33,13 +35,14 @@ export class QuickServer {
   constructor(args?: QuickServerOptions) {
     const options = args?.options || {};
     this.options = {
+      name: args?.name || process.env.APP_NAME,
       mongoUri: options?.mongoUri || process.env.MONGO_URI || DEFAULT_MONGO_URI,
       port: options?.port || process.env.PORT || DEFAULT_PORT,
     };
 
     this.services = args?.services || [];
     this.logger = createLogger();
-    this.app = createExpressApp({ port: this.options.port });
+    this.app = createExpressApp({ name: this.options.name, port: this.options.port });
   }
 
   public async start() {
