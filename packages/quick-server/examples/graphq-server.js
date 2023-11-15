@@ -22,7 +22,10 @@ const userDomain = new GraphDomain({
 const graphService = new GraphService();
 graphService.addDomain(userDomain);
 
-const app = new QuickServer({ services: [graphService] });
+const app = new QuickServer({
+  name: 'ExampleGraphServer',
+  services: [graphService],
+});
 
 async function main() {
   await app.start();
